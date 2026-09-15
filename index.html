@@ -123,10 +123,10 @@
     </div>
 
     <!-- RED BAND -->
-    <div style="background:#D8161C;color:#12100E;overflow:hidden;white-space:nowrap;padding:14px 0;border-top:1px solid rgba(18,16,14,0.2);border-bottom:1px solid rgba(18,16,14,0.2);">
+    <div style="background:#D8161C;color:#12100E;overflow:hidden;white-space:nowrap;padding:clamp(6px,0.6vw,10px) 0;border-top:1px solid rgba(18,16,14,0.2);border-bottom:1px solid rgba(18,16,14,0.2);">
       <div style="display:inline-flex;animation:mq 26s linear infinite;">
         <sc-for list="{{mq}}" as="r" hint-placeholder-count="2">
-          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:0.06em;text-transform:uppercase;padding:0 26px;">Techniek &mdash; Conditie &mdash; Kracht &mdash; Zelfvertrouwen &mdash; Mentale weerbaarheid &mdash; </span>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(14px,1.25vw,20px);line-height:1.2;letter-spacing:0.06em;text-transform:uppercase;padding:0 clamp(12px,1.6vw,24px);">Techniek &mdash; Conditie &mdash; Kracht &mdash; Zelfvertrouwen &mdash; Mentale weerbaarheid &mdash; </span>
         </sc-for>
       </div>
     </div>
