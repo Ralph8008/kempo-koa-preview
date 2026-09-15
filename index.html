@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script src="./dc-resources.js"></script>
+<script src="./support.js"></script>
+<title>Budo vereniging KOA — Kempo, Kajukenbo & Kickboksen in Lichtenvoorde</title>
+<meta name="description" content="Budo vereniging Kempo Ohana Achterhoek — Shin Gi Tai Kempo, Kajukenbo en kickboksen in Lichtenvoorde. Zieuwentseweg 53a, 06-51914954.">
+<link rel="icon" href="./assets/logo-koa.png">
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+    body{margin:0;background:#12100E;}
+    html{scroll-behavior:smooth;}
+    [id]{scroll-margin-top:92px;}
+    img,svg{max-width:100%;}
+    :focus-visible{outline:2px solid #F5C518;outline-offset:3px;}
+    button,a{-webkit-tap-highlight-color:rgba(216,22,28,0.25);}
+    ::selection{background:#D8161C;color:#EFE9DD;}
+    @keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    @keyframes scrollcue{0%,100%{transform:translateY(-3px);opacity:0.55}50%{transform:translateY(5px);opacity:1}}
+    .scroll-arrow{animation:scrollcue 1.8s ease-in-out infinite;}
+    @media (prefers-reduced-motion: reduce){.scroll-arrow{animation:none;}}
+    .depth{text-shadow:0 -0.01em 0 rgba(255,255,255,0.22),0.012em 0.012em 0 #b3ab9c,0.024em 0.024em 0 #8c8477,0.036em 0.036em 0 #655e53,0.05em 0.07em 0.06em rgba(0,0,0,0.55),0.07em 0.14em 0.26em rgba(0,0,0,0.65);}
+    .depth .depth-red{text-shadow:0 -0.01em 0 rgba(255,190,180,0.25),0.012em 0.012em 0 #a31015,0.024em 0.024em 0 #780b0f,0.036em 0.036em 0 #52070a,0.05em 0.07em 0.06em rgba(0,0,0,0.55),0.07em 0.14em 0.26em rgba(0,0,0,0.65);}
+    .eyebrow{display:flex;flex-wrap:wrap;align-items:center;column-gap:0.6em;row-gap:4px;}
+    .eyebrow > span{white-space:nowrap;}
+    @media (max-width:520px){.eyebrow{flex-direction:column;align-items:flex-start;}.eyebrow .eyebrow-sep{display:none;}}
+    :root{--grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");}
+    a{color:#D8161C;}
+    a:hover{color:#F5C518;}
+  </style>
+</helmet>
+
+<div style="background:#12100E;color:#EFE9DD;font-family:'Chivo',sans-serif;position:relative;">
+
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:40;opacity:{{grainOpacity}};background-image:var(--grain);mix-blend-mode:overlay;"></div>
+
+  <!-- LEFT RAIL -->
+  <div style="position:sticky;top:0;z-index:50;background:rgba(18,16,14,0.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(239,233,221,0.14);box-shadow:0 8px 24px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(16px,5vw,clamp(20px,5vw,44px));">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#EFE9DD;">
+      <img src="./assets/logo-koa.png" alt="Budo vereniging KOA" style="width:42px;height:auto;display:block;flex:none;"/>
+      <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:0.04em;line-height:1.05;">Budo vereniging<br/>KOA</span>
+    </a>
+    <button onClick="{{toggleMenu}}" style="background:#D8161C;border:none;color:#EFE9DD;min-height:48px;padding:0 20px;border-radius:2px;cursor:pointer;display:flex;align-items:center;gap:10px;font-family:'Chivo',sans-serif;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;flex:none;" style-hover="background:#F5C518;color:#12100E;">
+      Menu
+      <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 200px;">
+        <span style="width:18px;height:2px;background:currentColor;display:block;"></span>
+        <span style="width:18px;height:2px;background:currentColor;display:block;"></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- MENU OVERLAY -->
+  <div style="{{overlayStyle}}">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(32px,6vw,64px);width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(16px,5vw,40px);box-sizing:border-box;align-items:center;">
+      <div>
+        <sc-for list="{{navItems}}" as="item" hint-placeholder-count="9">
+          <a href="{{item.href}}" onClick="{{toggleMenu}}" style="display:flex;align-items:baseline;gap:20px;text-decoration:none;color:#EFE9DD;border-bottom:1px solid rgba(239,233,221,0.14);padding:12px 0;" style-hover="color:#F5C518;">
+            <span style="font-family:'Chivo',sans-serif;font-size:11px;letter-spacing:0.2em;color:#D8161C;width:28px;flex:none;">{{item.num}}</span>
+            <span style="{{item.mark}}"></span>
+            <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(30px,5vw,52px);text-transform:uppercase;line-height:1;">{{item.label}}</span>
+          </a>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:28px;">
+        <img src="./assets/logo-koa.png" alt="" style="width:150px;height:auto;"/>
+        <div>
+          <div style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.5);margin-bottom:8px;">Dojo</div>
+          <div style="font-size:16px;line-height:1.6;">Zieuwentseweg 53a<br/>7136 LA Lichtenvoorde<br/>06-51914954</div>
+        </div>
+        <div>
+          <div style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.5);margin-bottom:8px;">Trainingen</div>
+          <div style="display:flex;flex-direction:column;gap:14px;font-size:16px;line-height:1.5;">
+            <div><div style="color:#F5C518;">Kempo / Kajukenbo</div>Maandag &amp; donderdag &middot; 19:00 &ndash; 20:00</div>
+            <div><div style="color:#F5C518;">Kickboksen</div>Maandag &amp; donderdag &middot; 20:00 &ndash; 21:00</div>
+            <div><div style="color:#F5C518;">Jeugdtraining</div>Maandag &amp; donderdag &middot; 18:00 &ndash; 19:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onClick="{{toggleMenu}}" style="position:absolute;top:20px;right:clamp(16px,5vw,40px);background:none;border:1px solid rgba(239,233,221,0.3);color:#EFE9DD;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;padding:12px 20px;border-radius:2px;cursor:pointer;font-family:'Chivo',sans-serif;">Sluiten</button>
+  </div>
+
+  <div>
+
+    <!-- HERO -->
+    <div id="top" style="position:relative;min-height:min(82vh,720px);display:grid;">
+      <div style="{{heroPhotoStyle}}">
+        <img src="./assets/foto-hero.jpg" alt="Training bij Budo vereniging KOA" style="width:100%;height:100%;object-fit:contain;object-position:center center;display:block;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%,#000 86%,transparent 100%),linear-gradient(to bottom,#000 0,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 14%,#000 86%,transparent 100%),linear-gradient(to bottom,#000 0,#000 70%,transparent 100%);mask-composite:intersect;"/>
+        <div style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(18,16,14,0.93) 0%,rgba(18,16,14,0.8) 44%,rgba(18,16,14,0.52) 100%);"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(18,16,14,0) 52%,rgba(18,16,14,0.96) 100%);"></div>
+      </div>
+      <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;gap:clamp(28px,5vw,48px);padding:clamp(20px,5vw,44px) clamp(20px,5vw,44px) 48px;container-type:inline-size;min-width:0;">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <span style="width:8px;height:8px;background:#D8161C;border-radius:999px;display:block;"></span>
+          <span class="eyebrow" style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(239,233,221,0.65);"><span>Sinds 2013</span><span class="eyebrow-sep" aria-hidden="true">&middot;</span><span>Lichtenvoorde / Zieuwent</span></span>
+        </div>
+        <div>
+          <h1 class="depth" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(38px,11cqw,124px);line-height:1;letter-spacing:0;margin:0;text-transform:uppercase;overflow-wrap:break-word;">Kempo<br/><span class="depth-red" style="color:#D8161C;">Kajukenbo</span><br/>Kickboksen</h1>
+          <div style="display:flex;align-items:flex-end;gap:32px;margin-top:30px;flex-wrap:wrap;">
+            <p style="max-width:470px;font-size:16px;line-height:1.7;color:rgba(239,233,221,0.88);margin:0;">De enige vereniging in Nederland die les geeft in Kajukenbo. Trainen aan techniek, conditie, kracht en uithoudingsvermogen.</p>
+            <a href="#contact" style="background:#D8161C;color:#EFE9DD;font-weight:700;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;padding:20px 34px;text-decoration:none;border-radius:2px;white-space:nowrap;" style-hover="background:#F5C518;color:#12100E;">Kom meetrainen</a>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:28px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(239,233,221,0.45);flex-wrap:wrap;">
+          <a href="#vereniging" aria-label="Scroll naar beneden" style="color:rgba(239,233,221,0.55);text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;" style-hover="color:#F5C518;">
+            Scroll
+            <svg class="scroll-arrow" width="14" height="20" viewBox="0 0 14 20" fill="none" stroke="#D8161C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;"><path d="M7 1v17"/><path d="M1 12l6 6 6-6"/></svg>
+          </a>
+          <span>Zieuwentseweg 53a &middot; 7136 LA Lichtenvoorde</span>
+          <span style="display:flex;flex-direction:column;align-items:flex-start;">
+            <a href="tel:0651914954" style="color:#F5C518;text-decoration:none;letter-spacing:0.14em;display:inline-flex;align-items:center;min-height:44px;">06-51914954</a>
+            <span>Trainer: <span style="color:rgba(239,233,221,0.8);">David Zeelmaekers</span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RED BAND -->
+    <div style="background:#D8161C;color:#12100E;overflow:hidden;white-space:nowrap;padding:14px 0;border-top:1px solid rgba(18,16,14,0.2);border-bottom:1px solid rgba(18,16,14,0.2);">
+      <div style="display:inline-flex;animation:mq 26s linear infinite;">
+        <sc-for list="{{mq}}" as="r" hint-placeholder-count="2">
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:0.06em;text-transform:uppercase;padding:0 26px;">Techniek &mdash; Conditie &mdash; Kracht &mdash; Zelfvertrouwen &mdash; Mentale weerbaarheid &mdash; </span>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- 01 · DE VERENIGING -->
+    <div id="vereniging" style="position:relative;padding:clamp(56px,10vw,110px) clamp(20px,5vw,44px);max-width:1240px;overflow:hidden;">
+      <div style="position:absolute;bottom:-26px;right:-18px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(64px,10vw,170px);line-height:0.8;color:transparent;-webkit-text-stroke:1px rgba(245,197,24,0.26);pointer-events:none;user-select:none;letter-spacing:-0.02em;">KOA</div>
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:clamp(20px,5vw,44px);">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">01</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">De vereniging</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(36px,6vw,70px);align-items:start;position:relative;">
+        <div>
+          <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(34px,4.4vw,58px);line-height:1.02;text-transform:uppercase;margin:0 0 28px;">Welkom bij Budo vereniging KOA</h2>
+          <p style="font-size:17px;line-height:1.8;color:rgba(239,233,221,0.82);margin:0 0 20px;">Bij onze vereniging in Lichtenvoorde, Gelderland, kun je terecht voor lessen in Kempo, Kajukenbo en Kickboksen. Tijdens de trainingen wordt onder andere gewerkt aan techniek, conditie, kracht en uithoudingsvermogen. Door de trainingen zullen je zelfvertrouwen en mentale weerbaarheid groeien.</p>
+          <p style="font-size:17px;line-height:1.8;color:rgba(239,233,221,0.82);margin:0 0 20px;">Onze vereniging is de enige in Nederland die les geeft in de stijl Kajukenbo. Kom gerust een keer kijken &mdash; meedoen mag natuurlijk altijd. De trainingen zijn voor jeugd, en voor mannen en vrouwen.</p>
+          <p style="font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:26px;text-transform:uppercase;color:#F5C518;margin:32px 0 0;">Wij hopen je snel te zien.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:28px;">
+          <div style="position:relative;width:100%;aspect-ratio:3/4;max-height:min(70vh,520px);margin-right:0;">
+            <img src="./assets/foto-dojo.jpg" alt="De dojo in Zieuwent" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:32px;">
+            <div style="border-top:1px solid rgba(239,233,221,0.25);padding-top:16px;">
+              <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(20px,5vw,44px);line-height:1;color:#D8161C;">1</div>
+              <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(239,233,221,0.6);margin-top:6px;">Enige Kajukenbo-club in NL</div>
+            </div>
+            <div style="border-top:1px solid rgba(239,233,221,0.25);padding-top:16px;">
+              <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(20px,5vw,44px);line-height:1;color:#D8161C;">3</div>
+              <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(239,233,221,0.6);margin-top:6px;">Stijlen onder één dak</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 · STIJLEN -->
+    <div style="padding:0 0 clamp(56px,10vw,110px);">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:36px;padding:0 clamp(20px,5vw,44px);max-width:1240px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">02</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">De stijlen</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <div style="border-top:1px solid rgba(239,233,221,0.14);">
+        <a href="./kempo.html" style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(14px,3vw,36px);padding:34px clamp(20px,5vw,44px);border-bottom:1px solid rgba(239,233,221,0.14);text-decoration:none;color:#EFE9DD;background:#12100E;" style-hover="background:#191613;">
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(239,233,221,0.4);flex:none;width:42px;">01</span>
+          <span style="display:flex;align-items:center;justify-content:center;height:clamp(112px,20vw,170px);flex:none;width:min(44vw,210px);"><img src="./assets/logo-kempo.png" alt="Kempo" style="width:clamp(112px,20vw,158px);height:auto;display:block;"/></span>
+          <span style="display:flex;flex-direction:column;gap:10px;flex:1 1 260px;min-width:0;">
+            <span style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+              <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(30px,5.4vw,64px);text-transform:uppercase;line-height:0.9;">Kempo</span>
+              <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#F5C518;white-space:nowrap;">Shin Gi Tai</span>
+            </span>
+            <span style="font-size:16px;line-height:1.6;color:rgba(239,233,221,0.72);max-width:520px;">Techniek, krachtlijnen en wapenwerk &mdash; van filosofie tot toepassing.</span>
+          </span>
+          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#D8161C;white-space:nowrap;">Bekijk &rarr;</span>
+        </a>
+        <a href="./kajukenbo.html" style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(14px,3vw,36px);padding:34px clamp(20px,5vw,44px);border-bottom:1px solid rgba(239,233,221,0.14);text-decoration:none;color:#EFE9DD;background:#12100E;" style-hover="background:#191613;">
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(239,233,221,0.4);flex:none;width:42px;">02</span>
+          <span style="display:flex;align-items:center;justify-content:center;height:clamp(112px,20vw,170px);flex:none;width:min(44vw,210px);"><img src="./assets/logo-koa.png" alt="Kajukenbo" style="width:clamp(106px,19vw,150px);height:auto;display:block;"/></span>
+          <span style="display:flex;flex-direction:column;gap:10px;flex:1 1 260px;min-width:0;">
+            <span style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+              <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(30px,5.4vw,64px);text-transform:uppercase;line-height:0.9;">Kajukenbo</span>
+              <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#F5C518;white-space:nowrap;">Enige in Nederland</span>
+            </span>
+            <span style="font-size:16px;line-height:1.6;color:rgba(239,233,221,0.72);max-width:520px;">De Hawaiiaanse mengstijl. Nergens anders in Nederland te trainen.</span>
+          </span>
+          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#D8161C;white-space:nowrap;">Bekijk &rarr;</span>
+        </a>
+        <a href="./kickboksen.html" style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(14px,3vw,36px);padding:34px clamp(20px,5vw,44px);border-bottom:1px solid rgba(239,233,221,0.14);text-decoration:none;color:#EFE9DD;background:#12100E;" style-hover="background:#191613;">
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(239,233,221,0.4);flex:none;width:42px;">03</span>
+          <span style="display:flex;align-items:center;justify-content:center;height:clamp(112px,20vw,170px);flex:none;width:min(44vw,210px);"><img src="./assets/logo-kickboksen.png" alt="Kickboksen" style="width:clamp(128px,23vw,180px);height:auto;display:block;filter:invert(1);mix-blend-mode:screen;"/></span>
+          <span style="display:flex;flex-direction:column;gap:10px;flex:1 1 260px;min-width:0;">
+            <span style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+              <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(30px,5.4vw,64px);text-transform:uppercase;line-height:0.9;">Kickboksen</span>
+              <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#F5C518;white-space:nowrap;">Conditie</span>
+            </span>
+            <span style="font-size:16px;line-height:1.6;color:rgba(239,233,221,0.72);max-width:520px;">Stoten, trappen en tempo &mdash; bouwt kracht en uithoudingsvermogen op.</span>
+          </span>
+          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#D8161C;white-space:nowrap;">Bekijk &rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 03 · ROOSTER (paper) -->
+    <div style="background:#EFE9DD;color:#12100E;padding:clamp(52px,9vw,100px) clamp(20px,5vw,44px);">
+      <div style="max-width:1240px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:40px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">03</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(18,16,14,0.6);">Lesrooster</span>
+          <span style="flex:1;height:1px;background:rgba(18,16,14,0.2);display:block;"></span>
+        </div>
+        <sc-for list="{{schedule}}" as="row" hint-placeholder-count="3">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,130px),1fr));gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid rgba(18,16,14,0.18);">
+            <div style="font-size:11px;letter-spacing:0.2em;color:#D8161C;">{{row.num}}</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(22px,4.4vw,42px);text-transform:uppercase;line-height:1;">{{row.style}}</div>
+            <div style="font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(18,16,14,0.65);">{{row.days}}</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:24px;text-align:right;">{{row.time}}</div>
+          </div>
+        </sc-for>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:32px;">
+          <p style="font-size:15px;line-height:1.7;color:rgba(18,16,14,0.75);max-width:520px;margin:0;">De jeugdtraining is er voor kinderen die willen starten met Kempo en kickboksen. Eerst een keer kijken? Loop gerust binnen tijdens een les.</p>
+          <a href="./jeugdtraining.html" style="border:1px solid #12100E;color:#12100E;font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;padding:16px 28px;text-decoration:none;border-radius:2px;" style-hover="background:#12100E;color:#EFE9DD;">Meer over de jeugdtraining</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 · LOCATIE -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));min-height:clamp(360px,60vh,520px);">
+      <div style="padding:clamp(52px,9vw,100px) clamp(20px,5vw,44px);">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:40px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">04</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Locatie</span>
+        </div>
+        <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(34px,4.4vw,56px);text-transform:uppercase;line-height:1;margin:0 0 28px;">Waar je ons vindt</h2>
+        <div style="font-size:19px;line-height:1.7;margin-bottom:20px;">Zieuwentseweg 53a<br/>7136 LA Lichtenvoorde, Gelderland</div>
+        <div style="font-size:19px;line-height:1.7;margin-bottom:28px;">Mobiel: <a href="tel:0651914954" style="color:#F5C518;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;">06-51914954</a></div>
+        <a href="https://maps.google.com/maps?q=Zieuwentseweg+53a+Lichtenvoorde" style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #D8161C;display:inline-flex;align-items:center;min-height:44px;">Route plannen &rarr;</a>
+      </div>
+      <div style="border-left:1px solid rgba(239,233,221,0.14);background:#D8161C;color:#EFE9DD;min-height:clamp(360px,60vh,520px);display:flex;flex-direction:column;">
+        <div style="flex:1 1 auto;min-height:clamp(240px,38vh,360px);position:relative;background:#191613;">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=6.5184%2C51.9880%2C6.5464%2C51.9979&amp;layer=mapnik&amp;marker=51.99294818%2C6.53237290" title="Kaart: Zieuwentseweg 53a, Lichtenvoorde" loading="lazy" style="width:100%;height:100%;border:0;display:block;position:absolute;inset:0;filter:grayscale(0.25) contrast(1.05);"></iframe>
+        </div>
+        <div style="flex:none;padding:clamp(24px,4vw,36px) clamp(20px,5vw,48px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;">
+          <div>
+            <div style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;margin-bottom:12px;">Dojo &mdash; Lichtenvoorde</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(28px,4.6vw,52px);line-height:0.92;text-transform:uppercase;">Zieuwentseweg 53a</div>
+            <div style="font-size:16px;line-height:1.7;margin-top:10px;">7136 LA Lichtenvoorde, Gelderland<br/>Mobiel: <a href="tel:0651914954" style="color:#EFE9DD;text-decoration:underline;display:inline-flex;align-items:center;min-height:44px;">06-51914954</a></div>
+          </div>
+          <a href="https://maps.google.com/maps?q=51.992948183263515,6.5323728984168214" target="_blank" style="flex:none;background:#12100E;color:#EFE9DD;font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;padding:0 30px;min-height:52px;display:inline-flex;align-items:center;text-decoration:none;border-radius:2px;" style-hover="background:#F5C518;color:#12100E;">Route plannen &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA + FOOTER -->
+    <div id="contact" style="border-top:1px solid rgba(239,233,221,0.14);padding:clamp(52px,9vw,100px) clamp(20px,5vw,44px) 60px;">
+      <div style="display:flex;align-items:flex-start;gap:clamp(24px,5vw,40px);flex-wrap:wrap;justify-content:space-between;">
+        <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(38px,9vw,132px);line-height:0.86;text-transform:uppercase;margin:0;">Stap de<br/><span style="color:#D8161C;">dojo</span> in.</h2>
+        <img src="./assets/logo-koa.png" alt="Budo vereniging KOA" style="width:170px;height:auto;"/>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:clamp(20px,5vw,44px);">
+        <a href="./contact.html" style="background:#D8161C;color:#EFE9DD;font-weight:700;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;padding:20px 34px;text-decoration:none;border-radius:2px;" style-hover="background:#F5C518;color:#12100E;">Neem contact op</a>
+        <a href="./leden.html" style="border:1px solid rgba(239,233,221,0.35);color:#EFE9DD;font-weight:700;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;padding:20px 34px;text-decoration:none;border-radius:2px;" style-hover="border-color:#F5C518;color:#F5C518;">Ledenportaal</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:32px;margin-top:clamp(44px,8vw,80px);padding-top:32px;border-top:1px solid rgba(239,233,221,0.14);">
+        <sc-for list="{{footerCols}}" as="col" hint-placeholder-count="4">
+          <div>
+            <div style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(239,233,221,0.45);margin-bottom:14px;">{{col.title}}</div>
+            <div style="display:flex;flex-direction:column;">
+              <sc-for list="{{col.links}}" as="l" hint-placeholder-count="4">
+                <a href="{{l.href}}" style="font-size:15px;color:rgba(239,233,221,0.85);text-decoration:none;display:inline-flex;align-items:center;min-height:44px;" style-hover="color:#F5C518;">{{l.label}}</a>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:48px;font-size:12px;color:rgba(239,233,221,0.4);">&copy; 2026 Budo vereniging KOA &middot; Zieuwentseweg 53a, 7136 LA Lichtenvoorde &middot; 06-51914954</div>
+    </div>
+  </div>
+
+  <div style="position:sticky;bottom:0;z-index:45;display:flex;gap:1px;background:rgba(239,233,221,0.14);border-top:1px solid rgba(239,233,221,0.14);">
+    <a href="tel:0651914954" style="flex:1;background:#12100E;color:#EFE9DD;text-decoration:none;text-align:center;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:18px 12px;min-height:52px;display:flex;align-items:center;justify-content:center;" style-hover="background:#191613;color:#F5C518;">Bel ons</a>
+    <a href="./contact.html" style="flex:1;background:#D8161C;color:#EFE9DD;text-decoration:none;text-align:center;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:18px 12px;min-height:52px;display:flex;align-items:center;justify-content:center;" style-hover="background:#F5C518;color:#12100E;">Gratis proefles</a>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1440, &quot;height&quot;: 900}, &quot;grainOpacity&quot;: {&quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 0.06, &quot;min&quot;: 0, &quot;max&quot;: 0.16, &quot;step&quot;: 0.01, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Sfeer&quot;}}">
+class Component extends DCLogic {
+  state = { menuOpen: false, heroFade: 1 };
+
+  componentDidMount() {
+    this._onKey = (e) => { if (e.key === 'Escape' && this.state.menuOpen) this.setState({ menuOpen: false }); };
+    document.addEventListener('keydown', this._onKey);
+
+    let raf = null;
+    this._onScroll = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = null;
+        const hero = document.getElementById('top');
+        if (!hero) return;
+        const r = hero.getBoundingClientRect();
+        const span = Math.max(1, r.height * 0.7);
+        const scrolled = Math.max(0, -r.top);
+        const f = Math.max(0, Math.min(1, 1 - scrolled / span));
+        if (Math.abs(f - this.state.heroFade) > 0.01) this.setState({ heroFade: f });
+      });
+    };
+    document.addEventListener('scroll', this._onScroll, { capture: true, passive: true });
+    window.addEventListener('resize', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this._onKey);
+    document.removeEventListener('scroll', this._onScroll, { capture: true });
+    window.removeEventListener('resize', this._onScroll);
+    document.body.style.overflow = '';
+  }
+
+  componentDidUpdate() {
+    document.body.style.overflow = this.state.menuOpen ? 'hidden' : '';
+  }
+
+  nav() {
+    const items = [
+      { key: 'home', num: '01', label: 'Home', href: '#top' },
+      { key: 'over', num: '02', label: 'Over ons', href: './over-ons.html' },
+      { key: 'stijlen', num: '03', label: 'Stijlen', href: './stijlen.html' },
+      { key: 'jeugd', num: '04', label: 'Jeugdtraining', href: './jeugdtraining.html' },
+      { key: 'locatie', num: '05', label: 'Locatie', href: './locatie.html' },
+      { key: 'fotos', num: '06', label: "Foto's", href: './fotos.html' },
+      { key: 'videos', num: '07', label: "Video's", href: './videos.html' },
+      { key: 'leden', num: '08', label: 'Leden', href: './leden.html' },
+      { key: 'contact', num: '09', label: 'Contact', href: './contact.html' }
+    ];
+    return items.map(i => ({
+      num: i.num, label: i.label, href: i.href,
+      mark: 'flex:none;width:6px;height:6px;border-radius:999px;display:block;background:' +
+        (i.key === 'home' ? '#F5C518' : 'transparent') + ';'
+    }));
+  }
+
+  renderVals() {
+    const open = this.state.menuOpen;
+    const grainOpacity = this.props.grainOpacity ?? 0.06;
+    const o = {
+      position: 'fixed', inset: 0, zIndex: 60, background: '#12100E',
+      display: 'flex', alignItems: 'flex-start', overflowY: 'auto', padding: '96px 0 48px',
+      clipPath: open ? 'inset(0 0 0 0)' : 'inset(0 0 100% 0)',
+      opacity: open ? 1 : 0,
+      transition: 'clip-path 0.6s cubic-bezier(.76,0,.24,1), opacity 0.3s ease',
+      pointerEvents: open ? 'auto' : 'none'
+    };
+    const overlayStyle = Object.entries(o)
+      .map(([k, v]) => k.replace(/[A-Z]/g, m => '-' + m.toLowerCase()) + ':' + v).join(';');
+
+    return {
+      grainOpacity, overlayStyle,
+      heroPhotoStyle: 'position:absolute;inset:0;overflow:hidden;pointer-events:none;background:#12100E;will-change:opacity;opacity:' +
+        (0.16 + 0.84 * this.state.heroFade).toFixed(3) + ';',
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      navItems: this.nav(),
+      mq: [1, 2],
+      schedule: [
+        { num: '01', style: 'Kempo / Kajukenbo', days: 'Maandag & donderdag', time: '19:00 – 20:00' },
+        { num: '02', style: 'Kickboksen', days: 'Maandag & donderdag', time: '20:00 – 21:00' },
+        { num: '03', style: 'Jeugdtraining', days: 'Maandag & donderdag', time: '18:00 – 19:00' }
+      ],
+      footerCols: [
+        { title: 'Vereniging', links: [{ label: 'Over ons', href: './over-ons.html' }, { label: 'Locatie', href: './locatie.html' }, { label: 'Contact', href: './contact.html' }] },
+        { title: 'Stijlen', links: [{ label: 'Shin Gi Tai Kempo', href: './kempo.html' }, { label: 'Kajukenbo', href: './kajukenbo.html' }, { label: 'Kickboksen', href: './kickboksen.html' }, { label: 'Jeugdtraining', href: './jeugdtraining.html' }] },
+        { title: 'Media', links: [{ label: "Foto's", href: './fotos.html' }, { label: "Video's", href: './videos.html' }] },
+        { title: 'Leden', links: [{ label: 'Banden overzicht', href: './leden.html' }, { label: 'Contact', href: './contact.html' }] }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

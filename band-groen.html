@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script src="./dc-resources.js"></script>
+<script src="./support.js"></script>
+<title>Examenprogramma groene band — Budo vereniging KOA</title>
+<meta name="description" content="Budo vereniging Kempo Ohana Achterhoek — Shin Gi Tai Kempo, Kajukenbo en kickboksen in Lichtenvoorde. Zieuwentseweg 53a, 06-51914954.">
+<link rel="icon" href="./assets/logo-koa.png">
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+    body{margin:0;background:#12100E;}
+    html{scroll-behavior:smooth;}
+    [id]{scroll-margin-top:130px;}
+    img,svg{max-width:100%;}
+    :focus-visible{outline:2px solid #F5C518;outline-offset:3px;}
+    button,a{-webkit-tap-highlight-color:rgba(216,22,28,0.25);}
+    ::selection{background:#D8161C;color:#EFE9DD;}
+    a{color:#D8161C;}
+    a:hover{color:#F5C518;}
+    input{font-family:'Chivo',sans-serif;}
+    input::placeholder{color:rgba(239,233,221,0.4);}
+  </style>
+</helmet>
+
+<div style="background:#12100E;color:#EFE9DD;font-family:'Chivo',sans-serif;position:relative;">
+
+  <div style="position:sticky;top:0;z-index:50;background:rgba(18,16,14,0.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(239,233,221,0.14);box-shadow:0 8px 24px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(16px,5vw,44px);">
+    <a href="./index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#EFE9DD;">
+      <img src="./assets/logo-koa.png" alt="Budo vereniging KOA" style="width:42px;height:auto;display:block;flex:none;"/>
+      <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:0.04em;line-height:1.05;">Budo vereniging<br/>KOA</span>
+    </a>
+    <a href="./leden.html" style="border:1px solid rgba(239,233,221,0.28);color:#EFE9DD;min-height:48px;padding:0 20px;border-radius:2px;display:inline-flex;align-items:center;text-decoration:none;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;flex:none;" style-hover="border-color:#F5C518;color:#F5C518;">Alle banden</a>
+  </div>
+
+  <div>
+    <div style="padding:clamp(40px,7vw,80px) clamp(20px,5vw,44px) 28px;max-width:900px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap;">
+        <span style="width:52px;height:14px;border-radius:2px;display:block;border:1px solid rgba(239,233,221,0.25);background:#4E8B5C;flex:none;"></span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Examenprogramma &middot; vervolg op oranje</span>
+      </div>
+      <h1 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(38px,9vw,100px);line-height:0.9;text-transform:uppercase;margin:0 0 20px;">Groene band</h1>
+      <p style="font-size:17px;line-height:1.8;color:rgba(239,233,221,0.82);margin:0;">Op groen wordt alles van wit, geel en oranje herhaald en verdiept. Nieuw zijn Pinan 3 en 4, Blockingset 2 en de uitgebreide zelfverdediging tegen wurgingen en bereklemmen.</p>
+    </div>
+
+    <div style="{{gateStyle}}">
+      <div style="max-width:520px;background:#191613;border:1px solid rgba(239,233,221,0.16);border-radius:2px;padding:clamp(24px,5vw,32px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <span style="flex:none;width:30px;height:30px;border-radius:999px;background:#D8161C;color:#EFE9DD;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;">!</span>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;text-transform:uppercase;">Beveiligde pagina</span>
+        </div>
+        <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.7);margin:0 0 20px;">Dit programma is voor leden. Het wachtwoord is te verkrijgen bij Sigung Zeelmaekers.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <input type="password" value="{{value}}" onInput="{{onInput}}" onKeyDown="{{onKey}}" placeholder="Wachtwoord" style="flex:1 1 200px;background:#12100E;border:1px solid rgba(239,233,221,0.22);color:#EFE9DD;padding:14px 16px;border-radius:2px;font-size:16px;min-height:52px;box-sizing:border-box;"/>
+          <button onClick="{{onUnlock}}" style="flex:none;background:#D8161C;color:#EFE9DD;border:none;border-radius:2px;padding:0 26px;min-height:52px;cursor:pointer;font-family:'Chivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;" style-hover="background:#F5C518;color:#12100E;">Openen</button>
+        </div>
+        <div style="{{errorStyle}}">Wachtwoord onjuist. Vraag het actuele wachtwoord bij Sigung Zeelmaekers.</div>
+      </div>
+    </div>
+
+    <div style="{{contentStyle}}">
+      <div style="max-width:900px;padding:0 clamp(20px,5vw,44px) clamp(36px,7vw,60px);">
+
+        <div style="position:sticky;top:73px;z-index:30;background:rgba(18,16,14,0.96);backdrop-filter:blur(8px);display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding:10px 0;margin-bottom:8px;border-bottom:1px solid rgba(239,233,221,0.14);">
+          <a href="#warmup" style="{{chip}}">Warming-up</a>
+          <a href="#zelfverdediging" style="{{chip}}">Zelfverdediging</a>
+          <a href="#katas" style="{{chip}}">Kata's</a>
+          <a href="#blocking" style="{{chip}}">Blockingsets</a>
+          <a href="#kumite" style="{{chip}}">Kumite &amp; drills</a>
+          <a href="#begrippen" style="{{chip}}">Begrippen</a>
+        </div>
+
+        <div id="warmup" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">01</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Warming-up</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <div style="background:#12100E;padding:18px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;color:#F5C518;display:block;line-height:1;">100x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Jumping jacks</span></div>
+          <div style="background:#12100E;padding:18px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;color:#F5C518;display:block;line-height:1;">15x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Burpees</span></div>
+          <div style="background:#12100E;padding:18px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;color:#F5C518;display:block;line-height:1;">30x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Push-ups</span></div>
+          <div style="background:#12100E;padding:18px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;color:#F5C518;display:block;line-height:1;">60x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Buikspieren</span></div>
+          <div style="background:#12100E;padding:18px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;color:#F5C518;display:block;line-height:1;">20x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Squats</span></div>
+          <div style="background:#12100E;padding:18px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;color:#F5C518;display:block;line-height:1;">5 min</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Touwtjespringen</span></div>
+        </div>
+        <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.7);margin:16px 0 0;">Plus twee minuten stoten en trappen op de zak, uitgebreid rekken en beenlenigheid.</p>
+
+        <div id="zelfverdediging" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">02</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Zelfverdediging &mdash; nieuw op groen</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:24px;">
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Dubbelhandige wurging &mdash; 3 varianten</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Met panterklauw, haren of hoofd vastpakken en de tegenstander naar de grond brengen, of de arm controleren.</p>
+          </div>
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Enkelhandige wurging rechterhand &mdash; 2 varianten</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Met hieltrap richting het kruis, of met een elleboog-onderarmklem.</p>
+          </div>
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Voorwaartse bereklem, armen los</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Slag op de oren en knie in het kruis, gevolgd door een shuto in de nek.</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;margin:0 0 16px;">
+          <span style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(239,233,221,0.5);">Herhaling oranje-niveau</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.12);display:block;"></span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Voorwaartse bereklem &mdash; 3 varianten (haar/oren/ogen, panterklauw, duimen in de lies)</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Achterwaartse nekgreep met beide handen</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Achterwaartse nekgreep met de voorarm</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Achterwaartse bereklem &mdash; 2 varianten</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">"De brug" &mdash; bevrijding door door de knieën te zakken en de armen van de aanvaller te kruisen</div>
+        </div>
+
+        <div id="katas" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">03</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Kata's</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 20px;">Kajukenbo kata 1 tot en met 4 en Pinan 1 tot en met 4. Shin kata en Kem tao worden herhaald als basis.</p>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;margin-bottom:8px;">Pinan 3</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.78);margin:0 0 12px;">Met dubbele gekruiste stoot, hoge en lage blocks, een elleboogtechniek en een zweepslag.</p>
+            <a href="https://www.youtube.com/watch?v=ShwBu6oGjBQ" target="_blank" style="{{videoStyle}}">
+              <span style="{{playStyle}}">&#9654;</span>
+              <span style="font-weight:700;font-size:15px;color:#EFE9DD;">Pinan 3 &mdash; referentievideo</span>
+            </a>
+          </div>
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;margin-bottom:8px;">Pinan 4</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.78);margin:0;">Spiegelbeeldige kata: linker- en rechterkant identiek uitgevoerd. Wordt afgesloten met "Pinan 4 full speed" als aparte oefening.</p>
+          </div>
+        </div>
+
+        <div id="blocking" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">04</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Blockingsets</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <div style="background:#12100E;padding:22px;">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;color:#F5C518;margin-bottom:8px;">Blockingset 1 &mdash; langzaam</div>
+            <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.75);margin:0;">Ademhalingsgestuurd: inademen bij de opwaartse block, uitademen bij de neerwaartse. Eindigt met panterklauw-stoten.</p>
+          </div>
+          <div style="background:#12100E;padding:22px;">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;color:#F5C518;margin-bottom:8px;">Blockingset 2 &mdash; snel</div>
+            <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.75);margin:0;">Dezelfde blockreeks in de snelle variant, zonder de bewuste in- en uitademing te benoemen.</p>
+          </div>
+        </div>
+
+        <div id="kumite" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">05</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Kumite &amp; reflex drills</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Dezelfde negen combinaties als bij geel en oranje, nu met langere naverdediging: per combinatie komen een extra trap, elleboog, hamervuist en vrije afwerking erbij. Reflex drill 1 en 2 worden herhaald.</p>
+
+        <div id="begrippen" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">06</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Begrippenlijst</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <sc-for list="{{terms}}" as="t" hint-placeholder-count="7">
+            <div style="background:#12100E;display:flex;flex-wrap:wrap;gap:12px;padding:15px 20px;">
+              <span style="flex:1 1 220px;font-size:15px;">{{t.nl}}</span>
+              <span style="flex:none;font-size:15px;font-style:italic;color:#F5C518;">{{t.jp}}</span>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:clamp(36px,7vw,56px);padding-top:28px;border-top:1px solid rgba(239,233,221,0.14);">
+          <a href="./leden.html" style="background:#D8161C;color:#EFE9DD;font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;padding:0 26px;min-height:52px;display:inline-flex;align-items:center;text-decoration:none;border-radius:2px;" style-hover="background:#F5C518;color:#12100E;">Alle banden</a>
+          <a href="./band-oranje.html" style="border:1px solid rgba(239,233,221,0.3);color:#EFE9DD;font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;padding:0 26px;min-height:52px;display:inline-flex;align-items:center;text-decoration:none;border-radius:2px;" style-hover="border-color:#F5C518;color:#F5C518;">&larr; Oranje band</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid rgba(239,233,221,0.14);padding:clamp(32px,6vw,50px) clamp(20px,5vw,44px);font-size:12px;color:rgba(239,233,221,0.4);">&copy; 2026 Budo vereniging KOA &middot; Ledenprogramma &middot; Niet verspreiden buiten de vereniging</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1100, &quot;height&quot;: 900}}">
+class Component extends DCLogic {
+  state = { value: '', unlocked: false, error: false };
+
+  unlock() {
+    if (this.state.value.trim().toLowerCase() === 'groen') this.setState({ unlocked: true, error: false });
+    else this.setState({ error: true });
+  }
+
+  renderVals() {
+    const { value, unlocked, error } = this.state;
+    return {
+      value,
+      gateStyle: 'display:' + (unlocked ? 'none' : 'block') + ';padding:0 clamp(20px,5vw,44px) clamp(48px,9vw,90px);',
+      contentStyle: 'display:' + (unlocked ? 'block' : 'none') + ';',
+      errorStyle: 'display:' + (error ? 'block' : 'none') + ';margin-top:14px;font-size:14px;color:#F08A8A;',
+      videoStyle: 'display:flex;align-items:center;gap:16px;background:#191613;border:1px solid rgba(239,233,221,0.16);border-radius:2px;padding:16px 18px;text-decoration:none;min-height:64px;',
+      playStyle: 'flex:none;width:40px;height:40px;border-radius:999px;background:#D8161C;color:#EFE9DD;display:flex;align-items:center;justify-content:center;font-size:14px;',
+      chip: 'font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;',
+      terms: [
+        { nl: 'Voorwaartse trap', jp: 'mae geri' },
+        { nl: 'Zijwaartse trap', jp: 'mawashi geri' },
+        { nl: 'Trap naar het kruis', jp: 'kin geri' },
+        { nl: 'Trap achterwaarts', jp: 'ushiro geri' },
+        { nl: 'Trap zijwaarts recht (snijkant voet)', jp: 'yoko geri' },
+        { nl: 'Stoot op drie hoogtes', jp: 'sanbon ren zuki' },
+        { nl: 'Voorwaartse stoot', jp: 'choku zuki' }
+      ],
+      onInput: (e) => { const v = e.target.value; this.setState({ value: v, error: false }); },
+      onKey: (e) => { if (e.key === 'Enter') this.unlock(); },
+      onUnlock: () => this.unlock()
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script src="./dc-resources.js"></script>
+<script src="./support.js"></script>
+<title>Shin Gi Tai Kempo — Budo vereniging KOA</title>
+<meta name="description" content="Budo vereniging Kempo Ohana Achterhoek — Shin Gi Tai Kempo, Kajukenbo en kickboksen in Lichtenvoorde. Zieuwentseweg 53a, 06-51914954.">
+<link rel="icon" href="./assets/logo-koa.png">
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+    body{margin:0;background:#12100E;}
+    html{scroll-behavior:smooth;}
+    [id]{scroll-margin-top:92px;}
+    img,svg{max-width:100%;}
+    :focus-visible{outline:2px solid #F5C518;outline-offset:3px;}
+    button,a{-webkit-tap-highlight-color:rgba(216,22,28,0.25);}
+    ::selection{background:#D8161C;color:#EFE9DD;}
+    a{color:#D8161C;}
+    a:hover{color:#F5C518;}
+  </style>
+</helmet>
+
+<div style="background:#12100E;color:#EFE9DD;font-family:'Chivo',sans-serif;position:relative;">
+
+  <div style="position:sticky;top:0;z-index:50;background:rgba(18,16,14,0.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(239,233,221,0.14);box-shadow:0 8px 24px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(16px,5vw,clamp(20px,5vw,44px));">
+    <a href="./index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#EFE9DD;">
+      <img src="./assets/logo-koa.png" alt="Budo vereniging KOA" style="width:42px;height:auto;display:block;flex:none;"/>
+      <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:0.04em;line-height:1.05;">Budo vereniging<br/>KOA</span>
+    </a>
+    <button onClick="{{toggleMenu}}" style="background:#D8161C;border:none;color:#EFE9DD;min-height:48px;padding:0 20px;border-radius:2px;cursor:pointer;display:flex;align-items:center;gap:10px;font-family:'Chivo',sans-serif;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;flex:none;" style-hover="background:#F5C518;color:#12100E;">
+      Menu
+      <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 200px;">
+        <span style="width:18px;height:2px;background:currentColor;display:block;"></span>
+        <span style="width:18px;height:2px;background:currentColor;display:block;"></span>
+      </span>
+    </button>
+  </div>
+
+  <div style="{{overlayStyle}}">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(32px,6vw,64px);width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(16px,5vw,40px);box-sizing:border-box;align-items:center;">
+      <div>
+        <sc-for list="{{navItems}}" as="item" hint-placeholder-count="9">
+          <a href="{{item.href}}" style="display:flex;align-items:baseline;gap:20px;text-decoration:none;color:#EFE9DD;border-bottom:1px solid rgba(239,233,221,0.14);padding:12px 0;" style-hover="color:#F5C518;">
+            <span style="font-family:'Chivo',sans-serif;font-size:11px;letter-spacing:0.2em;color:#D8161C;width:28px;flex:none;">{{item.num}}</span>
+            <span style="{{item.mark}}"></span>
+            <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(30px,5vw,52px);text-transform:uppercase;line-height:1;">{{item.label}}</span>
+          </a>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:28px;">
+        <img src="./assets/logo-koa.png" alt="" style="width:150px;height:auto;"/>
+        <div>
+          <div style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.5);margin-bottom:8px;">Dojo</div>
+          <div style="font-size:16px;line-height:1.6;">Zieuwentseweg 53a<br/>7136 LA Lichtenvoorde<br/>06-51914954</div>
+        </div>
+      </div>
+    </div>
+    <button onClick="{{toggleMenu}}" style="position:absolute;top:20px;right:clamp(16px,5vw,40px);background:none;border:1px solid rgba(239,233,221,0.3);color:#EFE9DD;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;padding:12px 20px;border-radius:2px;cursor:pointer;font-family:'Chivo',sans-serif;">Sluiten</button>
+  </div>
+
+  <div>
+    <div style="padding:clamp(44px,8vw,90px) clamp(20px,5vw,44px) 40px;max-width:900px;">
+      <a href="./stijlen.html" style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.5);display:inline-flex;align-items:center;min-height:44px;" style-hover="color:#F5C518;">&larr; Alle stijlen</a>
+      <div style="display:flex;align-items:center;gap:14px;margin:24px 0;">
+        <span style="width:8px;height:8px;background:#D8161C;border-radius:999px;display:block;"></span>
+        <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(239,233,221,0.65);">Stijl 01 &middot; Shin Gi Tai</span>
+      </div>
+      <h1 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(clamp(20px,5vw,44px),8.5vw,116px);line-height:0.88;text-transform:uppercase;margin:0 0 28px;">Shin Gi Tai Kempo</h1>
+      <p style="font-size:18px;line-height:1.8;color:rgba(239,233,221,0.85);margin:0 0 32px;">Ook wel de stijl van de drie elementen genoemd. Men leert op een logische en doeltreffende manier een tegenstander zowel fysiek als mentaal uit evenwicht te brengen &mdash; door een opeenvolging van snelle vuist-, klem-, trap- en slagtechnieken op de krachtlijnen (hoogte, breedte, diepte) van de tegenstander.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+        <div style="background:#12100E;padding:20px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:22px;color:#F5C518;">SHIN</span><br/><span style="font-size:14px;color:rgba(239,233,221,0.7);">Hemel / mentaal</span></div>
+        <div style="background:#12100E;padding:20px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:22px;color:#F5C518;">GI</span><br/><span style="font-size:14px;color:rgba(239,233,221,0.7);">Aarde / techniek</span></div>
+        <div style="background:#12100E;padding:20px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:22px;color:#F5C518;">TAI</span><br/><span style="font-size:14px;color:rgba(239,233,221,0.7);">Mens / lichaam</span></div>
+      </div>
+    </div>
+
+    <div style="max-width:900px;padding:0 clamp(20px,5vw,44px) clamp(36px,7vw,60px);">
+      <div style="position:sticky;top:73px;z-index:30;background:rgba(18,16,14,0.96);backdrop-filter:blur(8px);display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:10px 0;margin-bottom:8px;border-bottom:1px solid rgba(239,233,221,0.14);">
+        <a href="#filosofie" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;" style-hover="border-color:#F5C518;color:#F5C518;">Filosofie</a>
+        <a href="#betekenis" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;" style-hover="border-color:#F5C518;color:#F5C518;">Betekenis</a>
+        <a href="#evolutie" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;" style-hover="border-color:#F5C518;color:#F5C518;">Evolutie</a>
+        <a href="#afkomst" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;" style-hover="border-color:#F5C518;color:#F5C518;">Afkomst</a>
+        <a href="#techniek" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;" style-hover="border-color:#F5C518;color:#F5C518;">Techniek</a>
+        <a href="#krachtlijnen" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;" style-hover="border-color:#F5C518;color:#F5C518;">Krachtlijnen</a>
+        <a href="#wapens" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;" style-hover="border-color:#F5C518;color:#F5C518;">Wapens</a>
+      </div>
+
+      <div id="filosofie" style="display:flex;align-items:center;gap:16px;margin:clamp(36px,7vw,56px) 0 22px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">01</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Filosofie</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Shin Gi Tai Kempo staat voor de associatie van drie elementen: <strong style="color:#EFE9DD;">Shin</strong> (de lucht, het mentale), <strong style="color:#EFE9DD;">Gi</strong> (de grond, de techniek) en <strong style="color:#EFE9DD;">Tai</strong> (de mens, het lichaam). De leerling moet de combinatie van deze drie elementen beheersen, want het één kan niet zonder het ander. Je mag mentaal sterk staan, maar zonder een goede techniek en een gezond lichaam bereik je nooit de perfectie.</p>
+
+      <div id="betekenis" style="display:flex;align-items:center;gap:16px;margin:clamp(36px,7vw,56px) 0 22px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">02</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Betekenis</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 20px;">Kempo is een combinatie van oude gevechtstechnieken en moderne wetenschap: een flux van opeenvolgende bewegingen die elke tegenstander kan immobiliseren. Iedere beweging anticipeert op de volgende beweging van de tegenstander &mdash; deze logische vloed van bewegingen is de essentie van Kempo. Om de uitgestraalde energie te controleren, moet de beoefenaar leren zichzelf te controleren: eerst de geest trainen, dan het lichaam, en uiteindelijk de innerlijke kracht &mdash; harmonie en evenwicht.</p>
+      <div style="background:#EFE9DD;color:#12100E;border-radius:2px;padding:28px 32px;display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
+        <div style="width:70px;height:96px;flex:none;background:#12100E;border-radius:2px;display:flex;align-items:center;justify-content:center;color:#EFE9DD;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:12px;text-align:center;letter-spacing:0.04em;">THE<br/>PERFECT<br/>WEAPON</div>
+        <div style="flex:1;min-width:220px;">
+          <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#D8161C;margin-bottom:6px;">Filmtip</div>
+          <p style="font-size:15px;line-height:1.6;margin:0;">Deze krijgskunst is ook te ontdekken in de film <em>The Perfect Weapon</em> (1991) met Jeff Speakman: een jongen die in een kempo-school leert zijn discipline te vinden, en zijn kennis jaren later gebruikt om de dood van een vriend recht te zetten.</p>
+        </div>
+      </div>
+
+      <div id="evolutie" style="display:flex;align-items:center;gap:16px;margin:clamp(36px,7vw,56px) 0 22px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">03</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Evolutie</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 20px;">Shin Gi Tai Kempo is een evolutie van het Shin Gi Kempo, dat ontstond uit een samenvloeiing van Chinese Pangai-noon, Kosho Ryu/Nakamura's Kempo en Choki Motobu Okinawan Kempo. Grootmeester Soke Mike Ceuliman combineerde deze stijlen. Toen hij in de jaren tachtig om gezondheidsredenen naar Australië terugkeerde, droeg hij het stokje over aan Sensei Daniel Hayen &mdash; bevestigd met een officieel Densho-document uit handen van Shihan Klaus Poestges (9e dan).</p>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 20px;">Shihan Hayen bracht als eerste structuur aan in het Shin Gi Kempo &mdash; tot dan toe vrijwel volledig mondeling overgedragen &mdash; en herschreef het systeem zodat alle beoefenaars vanuit dezelfde bron konden trainen. Deze herstructurering evolueerde de stijl van twee elementen (hemel en aarde) naar de huidige drie elementen (hemel, aarde en mens): Shin Gi Tai Kempo.</p>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Shihan D. Hayen is houder van een 9e dan Kempo (Grootmeester) en 6e dan Kajukenbo/Ju-jitsu, en president van BKO (Belgian Kempo Organisation), ICKKF (International Chinese Kempo Federation) en KKBN (Kempo Kajukenbo Bond Nederland).</p>
+
+      <div id="afkomst" style="display:flex;align-items:center;gap:16px;margin:clamp(36px,7vw,56px) 0 22px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">04</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Afkomst</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 20px;">Bodhidharma wordt traditioneel gezien als grondlegger van de boeddhistische Chan-school (in Japan en het westen bekend als Zen) en de Shaolin Quan-school, het "Shaolin boksen". Deze Indische monnik leefde eind vijfde, begin zesde eeuw en verspreidde zich via de Shaolin-tempels over Azië, waaronder Japan en Okinawa &mdash; waar Kempo na verloop van tijd karate werd genoemd.</p>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Volgens de overlevering trok Bodhidharma zich in 520 terug in de Shaolin-tempel, waar hij negen jaar mediteerde. Hij zag dat de monniken in slechte fysieke conditie verkeerden en ontwikkelde een reeks oefeningen om geest en lichaam samen te ontwikkelen &mdash; de basis van wat zich door heel het land verspreidde en zich vermengde met lokale Shaolin Quan-technieken. Omdat de archieven van de Shaolin-tempel in 1928 verbrand zijn, blijft dit verhaal een legende &mdash; maar de moderne krijgskunsten getuigen dat het onderricht heeft overleefd.</p>
+
+      <div id="techniek" style="display:flex;align-items:center;gap:16px;margin:clamp(36px,7vw,56px) 0 22px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">05</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Techniek</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);margin-bottom:20px;">
+        <div style="background:#12100E;padding:24px;">
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;color:#F5C518;margin-bottom:8px;">Goho &mdash; harde methode</div>
+          <p style="font-size:15px;line-height:1.65;color:rgba(239,233,221,0.75);margin:0;">Slagtechnieken en verdedigingen daartegen, gebruikmakend van alle "wapens" van het lichaam. Een mix van Okinawaanse technieken en Chinees Chuan Fa. Vraagt kennis van zwakke lichaamspunten, gevechtsafstand, snelheid en timing.</p>
+        </div>
+        <div style="background:#12100E;padding:24px;">
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;color:#F5C518;margin-bottom:8px;">Juho &mdash; zachte methode</div>
+          <p style="font-size:15px;line-height:1.65;color:rgba(239,233,221,0.75);margin:0;">Technieken om te reageren wanneer een aanvaller hand, arm, keel of kleding vastgrijpt: bevrijding, klem, worp, veeg- of immobilisatietechniek. Op hoger niveau komen drukpunttechnieken (Seiho) aan bod &mdash; waarna Goho en Juho samenvloeien tot één geheel.</p>
+        </div>
+      </div>
+
+      <div id="krachtlijnen" style="display:flex;align-items:center;gap:16px;margin:clamp(36px,7vw,56px) 0 22px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">06</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Krachtlijnen</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 20px;">Het concept van de krachtlijnen is niet eenvoudig voor een beginneling. Ed Parker ontwikkelde daarom de universele badge: een driedimensionaal geometrisch symbool met rechte en cirkelvormige lijnen die de krachtlijnen van kempo weergeven &mdash; gedragen op de linkermouw, met de punt van het hart naar onder. Dit symbool helpt de relatie tussen rechtlijnige en cirkelvormige bewegingen te begrijpen, tot het instinctief en spontaan wordt.</p>
+      <div style="display:grid;grid-template-columns:1fr;gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+        <div style="background:#12100E;padding:20px 24px;"><strong style="color:#F5C518;">Aanvalshoeken</strong> <span style="color:rgba(239,233,221,0.72);">&mdash; de acht beste richtingen van waaruit je kunt aanvallen of verdedigen (noord, zuid, oost, west en de vier tussenliggende hoeken).</span></div>
+        <div style="background:#12100E;padding:20px 24px;"><strong style="color:#F5C518;">Vertrekshoeken</strong> <span style="color:rgba(239,233,221,0.72);">&mdash; de beste hoeken om je te verwijderen, achteruit of naar de buitenkant, ver van de tegenstander.</span></div>
+        <div style="background:#12100E;padding:20px 24px;"><strong style="color:#F5C518;">Doeltreffende hoek</strong> <span style="color:rgba(239,233,221,0.72);">&mdash; de positionering van voeten of lichaam die een aanval het effectiefst maakt.</span></div>
+        <div style="background:#12100E;padding:20px 24px;"><strong style="color:#F5C518;">Afwijkingshoek</strong> <span style="color:rgba(239,233,221,0.72);">&mdash; buiten de aanvalslijn van de tegenstander stappen en die lijn juist gebruiken voor een eigen efficiëntere aanval.</span></div>
+        <div style="background:#12100E;padding:20px 24px;"><strong style="color:#F5C518;">Conceptuele doos</strong> <span style="color:rgba(239,233,221,0.72);">&mdash; een visualisatie die leerlingen helpt technieken onder de juiste hoek uit te voeren, als de rand van een denkbeeldige doos.</span></div>
+      </div>
+
+      <div id="wapens" style="display:flex;align-items:center;gap:16px;margin:clamp(36px,7vw,56px) 0 22px;">
+        <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">07</span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Wapens</span>
+        <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+      </div>
+      <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 24px;">Naast blote-handtechnieken maakt Shin Gi Tai Kempo ook gebruik van traditionele wapens. Hieronder een overzicht van de belangrijkste, met workshops op level 1 en 2 beschikbaar voor stok en mes.</p>
+
+      <div style="margin-bottom:28px;">
+        <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#EFE9DD;margin-bottom:10px;">Bo &mdash; lange stok</div>
+        <p style="font-size:15px;line-height:1.75;color:rgba(239,233,221,0.75);margin:0;">De bo (1,80m) is een van de eerste verdedigingswapens. Op Okinawa vindt men de oorsprong terug in de "tenbin", een draagstok voor emmers water of vis. De technieken gaan terug tot het Heian-tijdperk; toen Okinawa rond 1470 wapens verbood, ontwikkelden zich vooral de ongewapende krijgskunsten &mdash; en floreerde de bo als landbouwwerktuig-wapen.</p>
+      </div>
+      <div style="margin-bottom:28px;">
+        <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#EFE9DD;margin-bottom:10px;">Korte stokken</div>
+        <p style="font-size:15px;line-height:1.75;color:rgba(239,233,221,0.75);margin:0;">Ongeveer 50 tot 55 cm, meestal van rotan of veiligheidsrubber ("oway"). Mogelijk via culturele uitwisseling met Filipijnse stokvechtkunst overgenomen, of afkomstig uit het Hawaiiaanse Lua/Ku-Laau &mdash; bekend om zijn bonebreaking-, klauw- en bijttechnieken. In Shin Gi Tai Kempo wordt met één of twee stokken tegelijk gewerkt.</p>
+      </div>
+      <div style="margin-bottom:28px;">
+        <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#EFE9DD;margin-bottom:10px;">Mes</div>
+        <p style="font-size:15px;line-height:1.75;color:rgba(239,233,221,0.75);margin:0;">Tegenover iemand die met een mes gewapend is, vlucht men het beste &mdash; maar soms is dat geen optie. Het Shin Gi Tai Kempo kent hiervoor een compleet verdedigingssysteem: mes tegen lege handen, mes tegen mes, mes tegen andere wapens. Het oefenen tegen blanke wapens vraagt snelheid, reflexen en timing &mdash; geen enkele misser is toegestaan.</p>
+      </div>
+      <div style="margin-bottom:0;">
+        <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#EFE9DD;margin-bottom:10px;">Sai &amp; Tonfa</div>
+        <p style="font-size:15px;line-height:1.75;color:rgba(239,233,221,0.75);margin:0;">De <strong style="color:#F5C518;">Sai</strong>, oorspronkelijk een landbouwwerktuig van de Ryūkyū-eilanden, werd door de politie van de Shogun gebruikt om zwaarden te blokkeren en tegenstanders te ontwapenen zonder te verwonden. De <strong style="color:#F5C518;">Tonfa</strong> &mdash; het handvat van een molensteen &mdash; ontstond toen Okinawaanse boeren na een wapenverbod in 1609 hun werktuigen leerden gebruiken als verdedigingsmiddel. Beide wapens worden vandaag nog wereldwijd door politiekorpsen gebruikt.</p>
+      </div>
+    </div>
+
+    <div id="contact" style="border-top:1px solid rgba(239,233,221,0.14);padding:clamp(52px,9vw,100px) clamp(20px,5vw,44px) 60px;">
+      <div style="display:flex;align-items:flex-start;gap:clamp(24px,5vw,40px);flex-wrap:wrap;justify-content:space-between;">
+        <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(34px,8vw,110px);line-height:0.86;text-transform:uppercase;margin:0;">Kom een keer<br/><span style="color:#D8161C;">kijken.</span></h2>
+        <img src="./assets/logo-koa.png" alt="Budo vereniging KOA" style="width:150px;height:auto;"/>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:clamp(20px,5vw,44px);">
+        <a href="./contact.html" style="background:#D8161C;color:#EFE9DD;font-weight:700;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;padding:20px 34px;text-decoration:none;border-radius:2px;" style-hover="background:#F5C518;color:#12100E;">Neem contact op</a>
+        <a href="./stijlen.html" style="border:1px solid rgba(239,233,221,0.35);color:#EFE9DD;font-weight:700;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;padding:20px 34px;text-decoration:none;border-radius:2px;" style-hover="border-color:#F5C518;color:#F5C518;">Alle stijlen</a>
+      </div>
+      <div style="margin-top:clamp(44px,8vw,80px);padding-top:32px;border-top:1px solid rgba(239,233,221,0.14);font-size:12px;color:rgba(239,233,221,0.4);">&copy; 2026 Budo vereniging KOA &middot; Zieuwentseweg 53a, 7136 LA Lichtenvoorde</div>
+    </div>
+  </div>
+
+  <div style="position:sticky;bottom:0;z-index:45;display:flex;gap:1px;background:rgba(239,233,221,0.14);border-top:1px solid rgba(239,233,221,0.14);">
+    <a href="tel:0651914954" style="flex:1;background:#12100E;color:#EFE9DD;text-decoration:none;text-align:center;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:18px 12px;min-height:52px;display:flex;align-items:center;justify-content:center;" style-hover="background:#191613;color:#F5C518;">Bel ons</a>
+    <a href="./contact.html" style="flex:1;background:#D8161C;color:#EFE9DD;text-decoration:none;text-align:center;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:18px 12px;min-height:52px;display:flex;align-items:center;justify-content:center;" style-hover="background:#F5C518;color:#12100E;">Gratis proefles</a>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { menuOpen: false };
+
+  componentDidMount() {
+    this._onKey = (e) => { if (e.key === 'Escape' && this.state.menuOpen) this.setState({ menuOpen: false }); };
+    document.addEventListener('keydown', this._onKey);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this._onKey);
+    document.body.style.overflow = '';
+  }
+
+  componentDidUpdate() {
+    document.body.style.overflow = this.state.menuOpen ? 'hidden' : '';
+  }
+  nav() {
+    const items = [
+      { key: 'home', num: '01', label: 'Home', href: './index.html' },
+      { key: 'over', num: '02', label: 'Over ons', href: './over-ons.html' },
+      { key: 'stijlen', num: '03', label: 'Stijlen', href: './stijlen.html' },
+      { key: 'jeugd', num: '04', label: 'Jeugdtraining', href: './jeugdtraining.html' },
+      { key: 'locatie', num: '05', label: 'Locatie', href: './locatie.html' },
+      { key: 'fotos', num: '06', label: "Foto's", href: './fotos.html' },
+      { key: 'videos', num: '07', label: "Video's", href: './videos.html' },
+      { key: 'leden', num: '08', label: 'Leden', href: './leden.html' },
+      { key: 'contact', num: '09', label: 'Contact', href: './contact.html' }
+    ];
+    return items.map(i => ({
+      num: i.num, label: i.label, href: i.href,
+      mark: 'flex:none;width:6px;height:6px;border-radius:999px;display:block;background:' +
+        (i.key === 'stijlen' ? '#F5C518' : 'transparent') + ';'
+    }));
+  }
+
+  renderVals() {
+    const open = this.state.menuOpen;
+    const o = { position: 'fixed', inset: 0, zIndex: 60, background: '#12100E', display: 'flex', alignItems: 'flex-start', overflowY: 'auto', padding: '96px 0 48px', clipPath: open ? 'inset(0 0 0 0)' : 'inset(0 0 100% 0)', opacity: open ? 1 : 0, transition: 'clip-path 0.6s cubic-bezier(.76,0,.24,1), opacity 0.3s ease', pointerEvents: open ? 'auto' : 'none' };
+    const overlayStyle = Object.entries(o).map(([k, v]) => k.replace(/[A-Z]/g, m => '-' + m.toLowerCase()) + ':' + v).join(';');
+    return {
+      overlayStyle,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      navItems: this.nav(),
+      _unused: [
+        { num: '01', label: 'Home', href: './index.html' },
+        { num: '02', label: 'Over ons', href: './over-ons.html' },
+        { num: '03', label: 'Stijlen', href: './stijlen.html' },
+        { num: '04', label: 'Jeugdtraining', href: './jeugdtraining.html' },
+        { num: '05', label: 'Locatie', href: './locatie.html' },
+        { num: '06', label: "Foto's", href: './fotos.html' },
+        { num: '07', label: "Video's", href: './videos.html' },
+        { num: '08', label: 'Leden', href: './leden.html' },
+        { num: '09', label: 'Contact', href: './contact.html' }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

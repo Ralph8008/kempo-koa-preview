@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script src="./dc-resources.js"></script>
+<script src="./support.js"></script>
+<title>Examenprogramma gele band — Budo vereniging KOA</title>
+<meta name="description" content="Budo vereniging Kempo Ohana Achterhoek — Shin Gi Tai Kempo, Kajukenbo en kickboksen in Lichtenvoorde. Zieuwentseweg 53a, 06-51914954.">
+<link rel="icon" href="./assets/logo-koa.png">
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+    body{margin:0;background:#12100E;}
+    html{scroll-behavior:smooth;}
+    [id]{scroll-margin-top:130px;}
+    img,svg{max-width:100%;}
+    :focus-visible{outline:2px solid #F5C518;outline-offset:3px;}
+    button,a{-webkit-tap-highlight-color:rgba(216,22,28,0.25);}
+    ::selection{background:#D8161C;color:#EFE9DD;}
+    a{color:#D8161C;}
+    a:hover{color:#F5C518;}
+    input{font-family:'Chivo',sans-serif;}
+    input::placeholder{color:rgba(239,233,221,0.4);}
+  </style>
+</helmet>
+
+<div style="background:#12100E;color:#EFE9DD;font-family:'Chivo',sans-serif;position:relative;">
+
+  <div style="position:sticky;top:0;z-index:50;background:rgba(18,16,14,0.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(239,233,221,0.14);box-shadow:0 8px 24px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(16px,5vw,44px);">
+    <a href="./index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#EFE9DD;">
+      <img src="./assets/logo-koa.png" alt="Budo vereniging KOA" style="width:42px;height:auto;display:block;flex:none;"/>
+      <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:0.04em;line-height:1.05;">Budo vereniging<br/>KOA</span>
+    </a>
+    <a href="./leden.html" style="border:1px solid rgba(239,233,221,0.28);color:#EFE9DD;min-height:48px;padding:0 20px;border-radius:2px;display:inline-flex;align-items:center;text-decoration:none;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;flex:none;" style-hover="border-color:#F5C518;color:#F5C518;">Alle banden</a>
+  </div>
+
+  <div>
+    <div style="padding:clamp(40px,7vw,80px) clamp(20px,5vw,44px) 28px;max-width:900px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap;">
+        <span style="width:52px;height:14px;border-radius:2px;display:block;border:1px solid rgba(239,233,221,0.25);background:#F5C518;flex:none;"></span>
+        <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Examenprogramma &middot; 8e kyu &rarr; 7e kyu</span>
+      </div>
+      <h1 style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(38px,9vw,100px);line-height:0.9;text-transform:uppercase;margin:0 0 20px;">Gele band</h1>
+      <p style="font-size:17px;line-height:1.8;color:rgba(239,233,221,0.82);margin:0;">Programma Kempo Kajukenbo Bond Nederland van 8e kyu naar 7e kyu &mdash; van witte gordel met zwarte streep naar geel. Het volledige programma wit blijft onderdeel van dit examen.</p>
+    </div>
+
+    <div style="{{gateStyle}}">
+      <div style="max-width:520px;background:#191613;border:1px solid rgba(239,233,221,0.16);border-radius:2px;padding:clamp(24px,5vw,32px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <span style="flex:none;width:30px;height:30px;border-radius:999px;background:#D8161C;color:#EFE9DD;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;">!</span>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;text-transform:uppercase;">Beveiligde pagina</span>
+        </div>
+        <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.7);margin:0 0 20px;">Dit programma is voor leden. Het wachtwoord is te verkrijgen bij Sigung Zeelmaekers.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <input type="password" value="{{value}}" onInput="{{onInput}}" onKeyDown="{{onKey}}" placeholder="Wachtwoord" style="flex:1 1 200px;background:#12100E;border:1px solid rgba(239,233,221,0.22);color:#EFE9DD;padding:14px 16px;border-radius:2px;font-size:16px;min-height:52px;box-sizing:border-box;"/>
+          <button onClick="{{onUnlock}}" style="flex:none;background:#D8161C;color:#EFE9DD;border:none;border-radius:2px;padding:0 26px;min-height:52px;cursor:pointer;font-family:'Chivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;" style-hover="background:#F5C518;color:#12100E;">Openen</button>
+        </div>
+        <div style="{{errorStyle}}">Wachtwoord onjuist. Vraag het actuele wachtwoord bij Sigung Zeelmaekers.</div>
+      </div>
+    </div>
+
+    <div style="{{contentStyle}}">
+      <div style="max-width:900px;padding:0 clamp(20px,5vw,44px) clamp(36px,7vw,60px);">
+
+        <div style="position:sticky;top:73px;z-index:30;background:rgba(18,16,14,0.96);backdrop-filter:blur(8px);display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding:10px 0;margin-bottom:8px;border-bottom:1px solid rgba(239,233,221,0.14);">
+          <a href="#standen" style="{{chip}}">Standen</a>
+          <a href="#clockdance" style="{{chip}}">Clockdance</a>
+          <a href="#basis" style="{{chip}}">Trappen &amp; blokken</a>
+          <a href="#katas" style="{{chip}}">Kata's</a>
+          <a href="#kumite" style="{{chip}}">Kumite</a>
+          <a href="#zelfverdediging" style="{{chip}}">Zelfverdediging</a>
+          <a href="#drills" style="{{chip}}">Drills &amp; conditie</a>
+        </div>
+
+        <div id="standen" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">01</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Dojo-etiket &amp; standen</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 16px;">Schoon gewassen gi met alle clubemblemen. Valtechnieken zoals bij het programma wit.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <div style="background:#12100E;padding:18px 20px;font-size:15px;">Clockdance (kajukenbo)</div>
+          <div style="background:#12100E;padding:18px 20px;font-size:15px;">Neutral stance</div>
+          <div style="background:#12100E;padding:18px 20px;font-size:15px;">Catstance</div>
+        </div>
+        <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.65);margin:16px 0 0;">Tip: afgroeten bij Kajukenbo is rechtervoet bijsluiten, bij Kempo linkervoet bijsluiten.</p>
+
+        <div id="clockdance" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">02</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Clockdance &mdash; volledige reeks</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.7);margin:0 0 18px;">Alles op iets meer dan schouderbreedte. Kijk altijd naar voren, rug recht en voeten recht. Voeten glijden, niet optillen &mdash; breng ze pas op het laatst in de correcte stand (bijdraaien).</p>
+        <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:20px;">
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Deel 1 &mdash; uitstappen op de klok</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Handen op de heupen, voeten naast elkaar. Stap rechts uit naar 3u en zak door de knieën, stap terug. Zelfde met links naar 9u. Stap rechts naar 3u met linkerknie naar binnen draaien, terug; links naar 9u met rechterknie naar binnen, terug. Dan rechts naar 2u, terug; links naar 10u, terug; rechts naar 4u, terug; links naar 7u, terug; rechts naar 12u, terug; links naar 12u, terug.</p>
+          </div>
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Deel 2 &mdash; blocks in beweging</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Stap rechts naar voren met rechts uitwaartse block; links naar voren met links uitwaartse block. Rechts naar voren met rechts opwaartse block; links naar voren met links opwaartse block. Stap links naar achteren met rechts inwaartse block; rechts naar achteren met links inwaartse block.</p>
+          </div>
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Deel 3 &mdash; trappen en stoten</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Beide handen op de heupen: rechts voorwaartse trap en doorstappen, zelfde met links. Stap rechts naar voren met rechts voorwaartse stoot en links hikite; links naar voren met links voorwaartse stoot en rechts hikite. Opwaartse gekruiste block, voeten bijsluiten.</p>
+          </div>
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Deel 4 &mdash; block met mae geri</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Vanuit hikite-stand op schouderbreedte: rechterarm uitwaartse block met links hikite plus mae geri links; linkerarm uitwaartse block met rechts hikite plus mae geri rechts. Herhaal dit met de opwaartse block en daarna met de inwaartse block.</p>
+          </div>
+          <div style="border-left:2px solid #D8161C;padding-left:18px;">
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#F5C518;margin-bottom:8px;">Deel 5 &mdash; afsluiting</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0;">Kwartslag links met dubbele hamervuist. Halve slag rechts met dubbele hamervuist (2x). Linkerhand in kraanbek, rechterhand open palm voor de navel. Kwartslag rechts in catstance, rechterhand kraanbek, links open palm voor de navel. Armen kruisen naar yoi, rechtervoet bijsluiten, linkerhand open en rechtervuist in de linker handpalm.</p>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=7b4OYD5Ttt0" target="_blank" style="{{videoStyle}}">
+          <span style="{{playStyle}}">&#9654;</span>
+          <span style="display:flex;flex-direction:column;gap:3px;">
+            <span style="font-weight:700;font-size:15px;color:#EFE9DD;">Clockdance &mdash; referentievideo</span>
+            <span style="font-size:13px;color:rgba(239,233,221,0.6);">GM Brian Yoshii &middot; YouTube</span>
+          </span>
+        </a>
+
+        <div id="basis" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">03</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Basis trappen &amp; blokken</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <sc-for list="{{basics}}" as="b" hint-placeholder-count="8">
+            <a href="{{b.url}}" target="_blank" style="background:#12100E;display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:16px 20px;min-height:60px;text-decoration:none;color:#EFE9DD;" style-hover="background:#191613;">
+              <span style="flex:none;width:30px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:20px;color:transparent;-webkit-text-stroke:1px rgba(239,233,221,0.4);">{{b.num}}</span>
+              <span style="flex:1 1 200px;font-size:15px;">{{b.name}}</span>
+              <span style="flex:none;font-size:13px;font-style:italic;color:rgba(239,233,221,0.55);">{{b.jp}}</span>
+              <span style="flex:none;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#D8161C;">Video &rarr;</span>
+            </a>
+          </sc-for>
+        </div>
+
+        <div id="katas" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">04</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Kata's</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;margin-bottom:8px;">Kata 3 (kajukenbo)</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.78);margin:0 0 12px;">Uitgebreide stappenreeks met wapenen, blocks en stoten, inclusief 180-graden draaien, eindigend met een shuto richting de nek en terug naar yoi.</p>
+            <a href="https://www.youtube.com/watch?v=CbIMmKPRcLM" target="_blank" style="{{videoStyle}}">
+              <span style="{{playStyle}}">&#9654;</span>
+              <span style="font-weight:700;font-size:15px;color:#EFE9DD;">Kata 3 &mdash; referentievideo</span>
+            </a>
+          </div>
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;margin-bottom:8px;">Pinian 1 (kajukenbo)</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.78);margin:0 0 12px;">Complexe kata met mae geri, meerdere blocks (uitwaarts, hoog, inwaarts en gekruist), stoten, een elleboogtechniek en een zweepslag-hamervuist.</p>
+            <a href="https://www.youtube.com/watch?v=M2pf2jHA0XA" target="_blank" style="{{videoStyle}}">
+              <span style="{{playStyle}}">&#9654;</span>
+              <span style="font-weight:700;font-size:15px;color:#EFE9DD;">Pinan 1 &mdash; referentievideo</span>
+            </a>
+          </div>
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;margin-bottom:8px;">Kem Tao (kempo)</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.78);margin:0;">Reeks van kwart-, halve- en driekwartdraaien met wapenen en stoten. De reeks wordt twee keer herhaald, met een KIA op de derde stoot.</p>
+          </div>
+          <div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;margin-bottom:8px;">Shin Kata (kempo, linksom)</div>
+            <p style="font-size:15px;line-height:1.8;color:rgba(239,233,221,0.78);margin:0;">Opeenvolging van stoten, hoge blocks, lage blocks en voorwaartse trappen, telkens in kwart- en halve draaien &mdash; drie keer herhaald per element.</p>
+          </div>
+        </div>
+
+        <div id="kumite" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">05</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Kumite &mdash; links en rechts uitvoeren</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.7);margin:0 0 16px;">Elke aanval heeft een vaste verdedigingscombinatie van blok, tegenstoot en panterklauw, eventueel aangevuld met elleboog of trap.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Rechte vuistaanval aangezicht</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Rechte vuistaanval borst 1 &amp; 2</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Low kick 1 &amp; 2</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Voorwaartse trap buik + vuistaanval gezicht</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Voorwaartse trap buik</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Zijwaartse meshand (mawashi shuto)</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Voorwaartse duw</div>
+          <div style="background:#12100E;padding:16px 20px;font-size:15px;">Aanval open armen (berengreep)</div>
+        </div>
+
+        <div id="zelfverdediging" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">06</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Zelfverdediging 1&ndash;6</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <p style="font-size:15px;line-height:1.7;color:rgba(239,233,221,0.7);margin:0 0 16px;">Vijf scenario's tegen polsgrepen, telkens met wegdraaien, stoot, panterklauw en een afwerktechniek.</p>
+        <ol style="margin:0;padding-left:22px;font-size:15px;line-height:1.9;color:rgba(239,233,221,0.8);">
+          <li>Overhoekse polsgreep (rechter pols)</li>
+          <li>Polsgreep zelfde kant (linker pols) &mdash; variant 1</li>
+          <li>Polsgreep zelfde kant (linker pols) &mdash; variant 2</li>
+          <li>Dubbele polsgreep (beide polsen) &mdash; variant 1</li>
+          <li>Dubbele polsgreep (beide polsen) &mdash; variant 2</li>
+          <li>Polsomklemming met twee handen (linker pols)</li>
+        </ol>
+
+        <div id="drills" style="display:flex;align-items:center;gap:16px;margin:clamp(32px,6vw,48px) 0 20px;">
+          <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">07</span>
+          <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">Kick/boks, drills &amp; conditie</span>
+          <span style="flex:1;height:1px;background:rgba(239,233,221,0.18);display:block;"></span>
+        </div>
+        <p style="font-size:16px;line-height:1.8;color:rgba(239,233,221,0.8);margin:0 0 16px;">Jab, cross, hoekstoot links en rechts, low kick en kniestoot &mdash; één minuut op pads. Reflex drill 1 en 2: vaste reeksen van zeven tot acht stappen met checks, stoten en hamervuisten op ribben, gezicht, kruis en nek.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:1px;background:rgba(239,233,221,0.14);border:1px solid rgba(239,233,221,0.14);">
+          <div style="background:#12100E;padding:20px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;color:#F5C518;display:block;line-height:1;">20x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Opdrukken</span></div>
+          <div style="background:#12100E;padding:20px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;color:#F5C518;display:block;line-height:1;">20x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Sit-ups</span></div>
+          <div style="background:#12100E;padding:20px;"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;color:#F5C518;display:block;line-height:1;">10x</span><span style="font-size:13px;color:rgba(239,233,221,0.65);">Burpees</span></div>
+        </div>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:clamp(36px,7vw,56px);padding-top:28px;border-top:1px solid rgba(239,233,221,0.14);">
+          <a href="./band-oranje.html" style="background:#D8161C;color:#EFE9DD;font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;padding:0 26px;min-height:52px;display:inline-flex;align-items:center;text-decoration:none;border-radius:2px;" style-hover="background:#F5C518;color:#12100E;">Volgende: oranje band &rarr;</a>
+          <a href="./band-wit.html" style="border:1px solid rgba(239,233,221,0.3);color:#EFE9DD;font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;padding:0 26px;min-height:52px;display:inline-flex;align-items:center;text-decoration:none;border-radius:2px;" style-hover="border-color:#F5C518;color:#F5C518;">&larr; Wit met streep</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid rgba(239,233,221,0.14);padding:clamp(32px,6vw,50px) clamp(20px,5vw,44px);font-size:12px;color:rgba(239,233,221,0.4);">&copy; 2026 Budo vereniging KOA &middot; Ledenprogramma &middot; Niet verspreiden buiten de vereniging</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1100, &quot;height&quot;: 900}}">
+class Component extends DCLogic {
+  state = { value: '', unlocked: false, error: false };
+
+  unlock() {
+    if (this.state.value.trim().toLowerCase() === 'geel') this.setState({ unlocked: true, error: false });
+    else this.setState({ error: true });
+  }
+
+  renderVals() {
+    const { value, unlocked, error } = this.state;
+    return {
+      value,
+      gateStyle: 'display:' + (unlocked ? 'none' : 'block') + ';padding:0 clamp(20px,5vw,44px) clamp(48px,9vw,90px);',
+      contentStyle: 'display:' + (unlocked ? 'block' : 'none') + ';',
+      errorStyle: 'display:' + (error ? 'block' : 'none') + ';margin-top:14px;font-size:14px;color:#F08A8A;',
+      videoStyle: 'display:flex;align-items:center;gap:16px;background:#191613;border:1px solid rgba(239,233,221,0.16);border-radius:2px;padding:16px 18px;text-decoration:none;min-height:64px;',
+      playStyle: 'flex:none;width:40px;height:40px;border-radius:999px;background:#D8161C;color:#EFE9DD;display:flex;align-items:center;justify-content:center;font-size:14px;',
+      chip: 'font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,221,0.7);padding:0 14px;min-height:40px;display:inline-flex;align-items:center;flex:none;white-space:nowrap;border:1px solid rgba(239,233,221,0.2);border-radius:999px;',
+      basics: [
+        { num: '01', name: 'Voorwaartse trap', jp: 'mae geri', url: 'https://www.youtube.com/watch?v=FvTJA0VcH0w' },
+        { num: '02', name: 'Zijwaartse trap, snijkant voet', jp: 'yoko geri kekomi / sokuto', url: 'https://www.youtube.com/watch?v=YznE-7K9pt0' },
+        { num: '03', name: 'Zijwaartse trap, wreef voet', jp: 'mawashi geri', url: 'https://www.youtube.com/watch?v=R0WcFxtKFj8' },
+        { num: '04', name: 'Achterwaartse trap', jp: 'ushiro geri', url: 'https://www.youtube.com/watch?v=hUr2bIxpJXo' },
+        { num: '05', name: 'Opwaartse blok', jp: 'age uke', url: 'https://www.youtube.com/watch?v=z4eihC_cQHM' },
+        { num: '06', name: 'Neerwaartse blok', jp: 'gedan barai', url: 'https://www.youtube.com/watch?v=uAd1WgRjuto' },
+        { num: '07', name: 'Uitwaartse blok', jp: 'uchi uke', url: 'https://www.youtube.com/watch?v=mzfXM_oFpnw' },
+        { num: '08', name: 'Inwaartse blok', jp: 'soto uke', url: 'https://www.youtube.com/watch?v=Lzn1XgAUBpU' }
+      ],
+      onInput: (e) => { const v = e.target.value; this.setState({ value: v, error: false }); },
+      onKey: (e) => { if (e.key === 'Enter') this.unlock(); },
+      onUnlock: () => this.unlock()
+    };
+  }
+}
+
+</script>
+</body>
+</html>
