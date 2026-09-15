@@ -23,9 +23,6 @@
     button,a{-webkit-tap-highlight-color:rgba(216,22,28,0.25);}
     ::selection{background:#D8161C;color:#EFE9DD;}
     @keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-    @keyframes scrollcue{0%,100%{transform:translateY(-3px);opacity:0.55}50%{transform:translateY(5px);opacity:1}}
-    .scroll-arrow{animation:scrollcue 1.8s ease-in-out infinite;}
-    @media (prefers-reduced-motion: reduce){.scroll-arrow{animation:none;}}
     .depth{text-shadow:0 -0.01em 0 rgba(255,255,255,0.22),0.012em 0.012em 0 #b3ab9c,0.024em 0.024em 0 #8c8477,0.036em 0.036em 0 #655e53,0.05em 0.07em 0.06em rgba(0,0,0,0.55),0.07em 0.14em 0.26em rgba(0,0,0,0.65);}
     .depth .depth-red{text-shadow:0 -0.01em 0 rgba(255,190,180,0.25),0.012em 0.012em 0 #a31015,0.024em 0.024em 0 #780b0f,0.036em 0.036em 0 #52070a,0.05em 0.07em 0.06em rgba(0,0,0,0.55),0.07em 0.14em 0.26em rgba(0,0,0,0.65);}
     .eyebrow{display:flex;flex-wrap:wrap;align-items:center;column-gap:0.6em;row-gap:4px;}
@@ -61,10 +58,10 @@
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(32px,6vw,64px);width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(16px,5vw,40px);box-sizing:border-box;align-items:center;">
       <div>
         <sc-for list="{{navItems}}" as="item" hint-placeholder-count="9">
-          <a href="{{item.href}}" onClick="{{toggleMenu}}" style="display:flex;align-items:baseline;gap:20px;text-decoration:none;color:#EFE9DD;border-bottom:1px solid rgba(239,233,221,0.14);padding:12px 0;" style-hover="color:#F5C518;">
+          <a href="{{item.href}}" onClick="{{toggleMenu}}" style="display:flex;align-items:baseline;gap:20px;text-decoration:none;color:#EFE9DD;border-bottom:1px solid rgba(239,233,221,0.14);padding:clamp(8px,1.2vw,12px) 0;" style-hover="color:#F5C518;">
             <span style="font-family:'Chivo',sans-serif;font-size:11px;letter-spacing:0.2em;color:#D8161C;width:28px;flex:none;">{{item.num}}</span>
             <span style="{{item.mark}}"></span>
-            <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(30px,5vw,52px);text-transform:uppercase;line-height:1;">{{item.label}}</span>
+            <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(22px,4.2vw,52px);text-transform:uppercase;line-height:1;">{{item.label}}</span>
           </a>
         </sc-for>
       </div>
@@ -109,10 +106,6 @@
           </div>
         </div>
         <div style="display:flex;align-items:center;gap:28px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(239,233,221,0.45);flex-wrap:wrap;">
-          <a href="#vereniging" aria-label="Scroll naar beneden" style="color:rgba(239,233,221,0.55);text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;" style-hover="color:#F5C518;">
-            Scroll
-            <svg class="scroll-arrow" width="14" height="20" viewBox="0 0 14 20" fill="none" stroke="#D8161C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;"><path d="M7 1v17"/><path d="M1 12l6 6 6-6"/></svg>
-          </a>
           <span>Zieuwentseweg 53a &middot; 7136 LA Lichtenvoorde</span>
           <span style="display:flex;flex-direction:column;align-items:flex-start;">
             <a href="tel:0651914954" style="color:#F5C518;text-decoration:none;letter-spacing:0.14em;display:inline-flex;align-items:center;min-height:44px;">06-51914954</a>
@@ -132,7 +125,7 @@
     </div>
 
     <!-- 01 · DE VERENIGING -->
-    <div id="vereniging" style="position:relative;padding:clamp(56px,10vw,110px) clamp(20px,5vw,44px);max-width:1240px;overflow:hidden;">
+    <div style="position:relative;padding:clamp(56px,10vw,110px) clamp(20px,5vw,44px);max-width:1240px;overflow:hidden;">
       <div style="position:absolute;bottom:-26px;right:-18px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(64px,10vw,170px);line-height:0.8;color:transparent;-webkit-text-stroke:1px rgba(245,197,24,0.26);pointer-events:none;user-select:none;letter-spacing:-0.02em;">KOA</div>
       <div style="display:flex;align-items:center;gap:16px;margin-bottom:clamp(20px,5vw,44px);">
         <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">01</span>
