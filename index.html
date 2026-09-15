@@ -25,6 +25,7 @@
     @keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
     .depth{text-shadow:0 -0.01em 0 rgba(255,255,255,0.22),0.012em 0.012em 0 #b3ab9c,0.024em 0.024em 0 #8c8477,0.036em 0.036em 0 #655e53,0.05em 0.07em 0.06em rgba(0,0,0,0.55),0.07em 0.14em 0.26em rgba(0,0,0,0.65);}
     .depth .depth-red{text-shadow:0 -0.01em 0 rgba(255,190,180,0.25),0.012em 0.012em 0 #a31015,0.024em 0.024em 0 #780b0f,0.036em 0.036em 0 #52070a,0.05em 0.07em 0.06em rgba(0,0,0,0.55),0.07em 0.14em 0.26em rgba(0,0,0,0.65);}
+    @media (max-width:600px){.koa-mark{right:20px!important;bottom:14px!important;font-size:72px!important;-webkit-text-stroke:1.5px rgba(245,197,24,0.5)!important;}}
     .eyebrow{display:flex;flex-wrap:wrap;align-items:center;column-gap:0.6em;row-gap:4px;}
     .eyebrow > span{white-space:nowrap;}
     @media (max-width:520px){.eyebrow{flex-direction:column;align-items:flex-start;}.eyebrow .eyebrow-sep{display:none;}}
@@ -126,7 +127,7 @@
 
     <!-- 01 · DE VERENIGING -->
     <div style="position:relative;padding:clamp(56px,10vw,110px) clamp(20px,5vw,44px);max-width:1240px;overflow:hidden;">
-      <div style="position:absolute;bottom:-26px;right:-18px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(64px,10vw,170px);line-height:0.8;color:transparent;-webkit-text-stroke:1px rgba(245,197,24,0.26);pointer-events:none;user-select:none;letter-spacing:-0.02em;">KOA</div>
+      <div class="koa-mark" style="position:absolute;bottom:-26px;right:-18px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(64px,10vw,170px);line-height:0.8;color:transparent;-webkit-text-stroke:1px rgba(245,197,24,0.26);pointer-events:none;user-select:none;letter-spacing:-0.02em;">KOA</div>
       <div style="display:flex;align-items:center;gap:16px;margin-bottom:clamp(20px,5vw,44px);">
         <span style="font-size:11px;letter-spacing:0.24em;color:#D8161C;">01</span>
         <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(239,233,221,0.6);">De vereniging</span>
